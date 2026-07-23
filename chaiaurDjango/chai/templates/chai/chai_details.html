@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Chai Detail Page
+{% endblock %}
+
+{% block content %}
+
+<a href="{% url 'all_home' %}" class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
+    <h5 class="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">{{chai.name}}</h5>
+    <p class="text-body">{{chai.description}}</p>
+</a>
+
+{% endblock %}
+
